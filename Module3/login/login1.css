@@ -1,0 +1,72 @@
+* {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/003/588/032/original/pastel-ombre-background-in-pink-and-purple-vector.jpg) ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+form{
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.title{
+    padding-top: 20px;
+    font-weight: bold;
+}
+.login-form{
+    width: 400px;
+    height: 420px;
+    margin: 50px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    gap: 20px;
+    display: grid;
+}
+
+input[type="email"],input[type="password"]{
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+.btn{
+    border-radius: 20px !important;
+    
+}
+.signup{
+    text-align: center;
+    padding-top: 25px;
+}
+.line{
+    border-top: 1px solid lightgray;
+    position: relative;
+}
+.line:after{
+    content: "or connect with";
+    position: absolute;
+    top: -12px;
+    left: 33%; 
+    padding: 0px 8px;
+    background-color: aliceblue;
+}
+img {
+    width: 35px;
+    height: 35px;
+}
+.imglogo{
+    display: flex;
+    justify-content: center;
+}
+a{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+

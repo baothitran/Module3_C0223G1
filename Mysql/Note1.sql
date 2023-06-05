@@ -14,7 +14,7 @@
 -- tiên, một ký tự bất kỳ ở vị trí thứ hai và chữ "c" ở vị trí cuối cùng.
 
 -- INSERT SELECT: Là cú pháp SQL được sử dụng để chèn dữ liệu từ một bảng vào một bảng khác.
--- INSERT INTO [table1] SELECT [column1], [column2] FROM [table2]: Sẽ chèndữ liệu từ cột "column1" và 
+-- INSERT INTO [table1] SELECT [column1], [column2] FROM [table2]: Sẽ chèn dữ liệu từ cột "column1" và 
 -- "column2" trong bảng "table2" vào bảng "table1".
 
 -- UNION trong SQL là gì: UNION là một phép toán trong SQL được sử dụng để kết hợp các tập dữ liệu từ 

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Table</title>
+  <link rel="stylesheet" href="data_style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Ajax CRUD with Bootstrap modals and Datatables</h1>
+    <h3>Person Data</h3>
+    <button type="button" class="btn btn-success">Add Person</button> <br>
+    Show <select name="" id="">
+      <option value="10">10</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+    </select> entries
+    <div style="float: right;">
+      Search: <input type="text">
+    </div>
+    <div class="main text-center">
+      <table>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Gender</th>
+          <th>Address</th>
+          <th>Date of Birth</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>E</td>
+          <td>Male</td>
+          <td>123 Main St</td>
+          <td>1990-01-01</td>
+          <td>
+            <button class="btn btn-primary">Edit</button>
+            <button class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>F</td>
+          <td>Female</td>
+          <td>456 Elm St</td>
+          <td>1992-05-10</td>
+          <td>
+            <button class="btn btn-primary">Edit</button>
+            <button class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>G</td>
+          <td>Female</td>
+          <td>456 Elm St</td>
+          <td>1992-05-10</td>
+          <td>
+            <button class="btn btn-primary">Edit</button>
+            <button class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>D</td>
+          <td>H</td>
+          <td>Female</td>
+          <td>456 Elm St</td>
+          <td>1992-05-10</td>
+          <td>
+            <button class="btn btn-primary">Edit</button>
+            <button class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>E</td>
+          <td>I</td>
+          <td>Female</td>
+          <td>456 Elm St</td>
+          <td>1992-05-10</td>
+          <td>
+            <button class="btn btn-primary">Edit</button>
+            <button class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="foot-line">
+      Showing 1 to 5 of 5 entries
+      <div class="tablesm">
+        <table>
+          <tr>
+            <td>Previous</td>
+            <td>1</td>
+            <td>Next</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>
