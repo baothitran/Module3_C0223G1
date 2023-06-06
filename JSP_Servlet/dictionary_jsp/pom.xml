@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>dictionary_jsp</artifactId>
+    <artifactId>converter_jsp</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>dictionary_jsp</name>
     <packaging>war</packaging>
