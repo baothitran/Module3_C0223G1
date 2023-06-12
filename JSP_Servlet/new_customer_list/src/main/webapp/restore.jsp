@@ -20,6 +20,21 @@
     }
 </style>
 <div class="container">
+    <div class="row d-flex justify-content-center">
+        <c:if test="${requestScope.message != null}">
+            <script>
+                window.onload = function (){
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: '${message}',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                }
+            </script>
+        </c:if>
+    </div>
     <form method="post" id="frmHiden" action="/customers?action=restore">
         <input type="hidden" id="txtIdEdit" name="idEdit"  />
     </form>
@@ -28,6 +43,9 @@
 
     </form>
     <table class="table table-hover">
+        <div class="fl-r">
+            <a href="/customers" class="button btn btn-primary float-right mb-2">Back To List</a>
+        </div>
         <thead>
         <tr>
             <th scope="col">Name</th>
@@ -52,6 +70,9 @@
         </tbody>
     </table>
     <script>
+        function handleBack(){
+
+        }
         function handleRestore(id,name) {
             document.getElementById("txtIdEdit").value = id;
 
@@ -71,13 +92,6 @@
             }).then((result) => {
                 if (result.isConfirmed) {
                     document.getElementById("frmHiden").submit();
-                    Swal.fire({
-                        position: 'top-end',
-                        icon: 'success',
-                        title: 'Khôi phục thành công',
-                        showConfirmButton: false,
-                        timer: 1500
-                    })
                 } else if (result.isDenied) {
                     Swal.fire({
                         position: 'top-end',

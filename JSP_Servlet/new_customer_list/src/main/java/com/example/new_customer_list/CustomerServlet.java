@@ -125,14 +125,15 @@ public class CustomerServlet extends HttpServlet {
     private void restoreCustomer(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         int id = Integer.parseInt(req.getParameter("idEdit"));
         customerService.restore(id);
-        resp.sendRedirect("/customers");
+        customers = customerService.getAllCustomersIsDeleted();
+        req.setAttribute("customers",customers);
+        req.setAttribute("message", "Khôi phục thành công");
+        req.getRequestDispatcher("restore.jsp").forward(req,resp);
     }
     private void deleteCustomer(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         int id = Integer.parseInt(req.getParameter("idEdit"));
         customerService.delete(id);
         req.setAttribute("message", "Xoá thành công");
-        customerTypes = customerTypeService.getAllCustomerType();
-        req.setAttribute("customerTypes", customerTypes);
         customers = customerService.getAllCustomers();
         req.setAttribute("customers",customers);
         req.getRequestDispatcher("show.jsp").forward(req,resp);

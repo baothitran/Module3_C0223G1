@@ -30,7 +30,7 @@
                     Swal.fire({
                         position: 'top-end',
                         icon: 'success',
-                        title: ${message},
+                        title: '${message}',
                         showConfirmButton: false,
                         timer: 1500
                     })
@@ -96,7 +96,6 @@
                 }).then((result) => {
                     if (result.isConfirmed) {
                         document.getElementById("frmHiden").submit()
-
                     } else {
                             Swal.fire({
                                 position: 'top-end',
